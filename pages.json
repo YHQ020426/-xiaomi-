@@ -1,0 +1,98 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": {
+						"searchInput": {
+							"align": "left",
+							"backgroundColor": "#F7F7F7",
+							"borderRadius": "4px",
+							"disabled": true,
+							"placeholder": "智能积木 越野四驱车",
+							"placeholderColor": "#CCCCCC"
+						},
+					    "buttons":[
+							{
+								"color": "#989898",
+								"colorPressed": "#FD6801",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue67a"
+							},
+							{
+								"color": "#989898",
+								"colorPressed": "#FD6801",
+								"float": "left",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text": "\ue661"
+							}
+						]
+					}
+				}
+			}
+		}
+	    ,
+		{
+		    "path" : "pages/class/class",
+		    "style" :                                                                                    
+		    {
+		      
+		    }
+		    
+		},
+		{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+           
+            }
+            
+        }
+    ],
+	//全局配置
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "仿小米商城",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	//底部导航
+	"tabBer": {
+		"color":"#B1B1B1",
+		"selectedColor":"#FD6801",
+		"borderStyle":"black",
+		"backgroundColor":"#FFFFFF",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tabbar/index.png",
+				"selectedIconPath":"static/tabber/indexSelected.png",
+				"text":"首页"
+			},
+			{
+				"pagePath":"pages/class/class",
+				"iconPath":"static/tabbar/class.png",
+				"selectedIconPath":"static/tabber/classSelected.png",
+				"text":"分类"
+			},
+			{
+				"pagePath":"pages/cart/cart",
+				"text":"购物车",
+				"iconPath":"static/tabbar/cart.png",
+				"selectedIconPath":"static/tabber/cartSelected.png"
+			},
+			{
+				"pagePath":"pages/my/my",
+				"text":"我",
+				"iconPath":"static/tabbar/my.png",
+				"selectedIconPath":"static/tabber/mySelected.png"
+			}
+		]
+	}
+	
+}
