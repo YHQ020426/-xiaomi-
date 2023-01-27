@@ -19,7 +19,7 @@
 		},
 		methods:{
 			event(item){
-				console.log("点击了图标")
+				console.log("点击了组件图标")
 			}
 		}
 	}
