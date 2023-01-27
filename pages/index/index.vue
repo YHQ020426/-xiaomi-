@@ -1,13 +1,22 @@
 <template>
 	<view>
         <!-- 轮播图组件 -->
-		<swiper-image :resdata="swipers"></swiper-image>
+		<swiper-image :resdata="swipers" />
 		<!-- 首页分类 -->
-		<index-nav :resdata="indexnavs"></index-nav>
+		<index-nav :resdata="indexnavs" />
         <!-- 全局分割线 -->
-		<divider></divider>
+		<divider/>
 		<!-- 三图广告 -->
-		<three-adv :resdata="threeAdv"></three-adv>
+		<three-adv :resdata="threeAdv" />
+		
+		<divider/>
+		
+		<!-- 基础卡片组件 -->
+<!-- 		<card :showhead="false">
+			<image src="/static/images/bg.jpg" mode="widthFix"></image>
+		</card> -->
+		<!-- 大图广告位 -->
+		<card headTitle="每日精选" bodyCover="/static/images/demo/demo4"></card>
 	</view>
 </template>
 
@@ -18,12 +27,14 @@
 	import swiperImage from "@/components/index/swiper-image.vue"
 	import indexNav from "@/components/index/index-nav.vue"
 	import threeAdv from "@/components/index/three-adv.vue"
+	import card from "@/components/common/card.vue"
 	export default {
 		//注册组件
 		components:{
 		    swiperImage,
 			indexNav,
-			threeAdv
+			threeAdv,
+			card
 		},
 		data() {
 			return {
