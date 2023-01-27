@@ -74,7 +74,7 @@
             {
 				"enablePullDownRefresh":true,
 				"app-plus":{
-					"titleNView":false,
+					"titleNView":false,//去除
 					"scrollIndicator":"none",
 					"bounce":"none"
 				}

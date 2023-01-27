@@ -1,6 +1,9 @@
 import App from './App'
+//引入全局组件
+import divider from "@/components/common/divider.vue"
 
-// #ifndef VUE3
+Vue.component('divider',divider)
+
 import Vue from 'vue'
 Vue.config.productionTip = false
 App.mpType = 'app'
@@ -8,14 +11,4 @@ const app = new Vue({
     ...App
 })
 app.$mount()
-// #endif
 
-// #ifdef VUE3
-import { createSSRApp } from 'vue'
-export function createApp() {
-  const app = createSSRApp(App)
-  return {
-    app
-  }
-}
-// #endif
