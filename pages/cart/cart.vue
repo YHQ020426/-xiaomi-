@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		<view>cart页面</view>
 	</view>
 </template>
 

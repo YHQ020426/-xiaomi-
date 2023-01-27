@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		<view>class页面</view>
 	</view>
 </template>
 
