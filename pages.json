@@ -101,7 +101,7 @@
 		"backgroundColor": "#FFFFFF"
 	},
 	//底部导航
-	"tabBer": {
+	"tabBar": {
 		"color":"#B5B5B5",
 		"selectedColor":"#FD6801",
 		"borderStyle":"black",
