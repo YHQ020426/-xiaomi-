@@ -8,15 +8,34 @@
 		<divider/>
 		<!-- 三图广告 -->
 		<three-adv :resdata="threeAdv" />
-		
 		<divider/>
-		
 		<!-- 基础卡片组件 -->
 <!-- 		<card :showhead="false">
 			<image src="/static/images/bg.jpg" mode="widthFix"></image>
 		</card> -->
 		<!-- 大图广告位 -->
-		<card headTitle="每日精选" bodyCover="/static/images/demo/demo4"></card>
+		<card headTitle="每日精选" bodyCover="/static/images/demo/demo4.png"></card>
+	    <!-- 公共列表组件 -->
+		<view class="row">
+			<view style="width: 372.5upx;">
+				<image src="/static/images/demo/list/1.jpg"
+				mode="widthFix"
+				lazy-load></image>
+				<view class="p-2 pt-1">
+					<view class="font-md">米家空调</view>
+					<text class="d-block font text-light-muted">1.5匹变频</text>
+					<view class="d-flex my-1">
+						<!-- 插槽写法 -->
+						<!-- <price>1399</price> -->
+						<price :price="1399"></price>
+						<view class="font-sm text-light-muted line-through m1-1 a-self-end line-h">¥2699</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		
+		<!-- 底部tabbar挡住了部分内容，增加了一个空白盒子将整体抬高 -->
+		<view style="height: 100upx;"></view>
 	</view>
 </template>
 
@@ -28,13 +47,15 @@
 	import indexNav from "@/components/index/index-nav.vue"
 	import threeAdv from "@/components/index/three-adv.vue"
 	import card from "@/components/common/card.vue"
+	import price from "@/components/common/price.vue"
 	export default {
 		//注册组件
 		components:{
 		    swiperImage,
 			indexNav,
 			threeAdv,
-			card
+			card,
+			price
 		},
 		data() {
 			return {
