@@ -6,6 +6,8 @@
 		<index-nav :resdata="indexnavs"></index-nav>
         <!-- 全局分割线 -->
 		<divider></divider>
+		<!-- 三图广告 -->
+		<three-adv :resdata="threeAdv"></three-adv>
 	</view>
 </template>
 
@@ -15,11 +17,13 @@
 	//<!-- 2.在export default中注册组件abc -->
 	import swiperImage from "@/components/index/swiper-image.vue"
 	import indexNav from "@/components/index/index-nav.vue"
+	import threeAdv from "@/components/index/three-adv.vue"
 	export default {
 		//注册组件
 		components:{
 		    swiperImage,
-			indexNav
+			indexNav,
+			threeAdv
 		},
 		data() {
 			return {
@@ -40,8 +44,12 @@
 					{src:"../../static/images/indexnav/8.gif",text:"电视热卖"},
 					{src:"../../static/images/indexnav/9.gif",text:"家电热卖"},
 					{src:"../../static/images/indexnav/10.gif",text:"米粉卡"}
-				]
-			    
+				],
+				threeAdv:{
+					big:{src:"/static/images/demo/demo1.jpg"},
+					smalltop:{src:"/static/images/demo/demo2.jpg"},
+					smallbotton:{src:"/static/images/demo/demo2.jpg"}
+				}
 			}
 		},
 		onLoad() {
